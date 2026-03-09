@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+img {
+    width: 180px;
+}
+.draw-lots {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 4px 8px #db0707;
+}
+.input-numbers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    gap: 15px;
+}
+.input-min, .input-max {
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    border: solid #404c5d 2px;
+}
+input::placeholder {
+    color: white;
+}
+h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #333;
+    box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #db0707, #db0707);
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #313131, inset -5px -5px 10px #313131;
+}
+
+button:hover {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  transition: 100ms;
+  transition: 100ms;
+}
+.div-result {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.result {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 4px 8px #db0707;
+}
+.number-result {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 4px 8px #db0707;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .input-min, .input-max {
+        height: 40px;
+        width: 170px;
+    }
+}
